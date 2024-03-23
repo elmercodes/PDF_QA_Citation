@@ -1,0 +1,6 @@
+llama-index==0.10.12
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+streamlit==1.32.2
+faiss-cpu==1.7.4
+streamlit-extras
