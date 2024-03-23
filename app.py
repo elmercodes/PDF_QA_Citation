@@ -30,7 +30,6 @@ def save_uploaded_files(uploaded_files):
     temp_dir = tempfile.mkdtemp()
     saved_paths = []
     for uploaded_file in uploaded_files:
-        # Assuming PDF files here; adjust as needed
         with open(os.path.join(temp_dir, uploaded_file.name), "wb") as f:
             f.write(uploaded_file.getvalue())
         saved_paths.append(os.path.join(temp_dir, uploaded_file.name))
@@ -71,7 +70,7 @@ def main():
 
     
     
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
     
     
